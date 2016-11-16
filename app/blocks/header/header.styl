@@ -3,7 +3,33 @@
 	color white
 	background-color $red
 	background-image url(../images/header/background.jpg)
+	&__wrapper
+		padding-y 28px
 	&__top
-		padding-top 28px
 		display flex
 		justify-content space-between
+		font-family montserrat
+	&__navigation
+		display inline-block
+	&__nav-item
+		padding 11px 27px
+		display inline-block
+		text-decoration none
+		color white
+		transition color .1s
+		text-transform uppercase
+		&:hover
+			color $yellow
+	&__icons
+		display inline-block
+	&__icon-item
+		display inline-block
+		padding 11px 27px
+		&_lens
+			padding-right 0
+	&__icon
+		transition fill .1s
+		size 16px
+		fill white
+		&:hover
+			fill $yellow

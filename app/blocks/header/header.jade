@@ -21,9 +21,9 @@ mixin header ()
 						+e('a').nav-item(href='#')
 							| Contact
 					+e.icons
-						+e.icon._shop
-							+icon('shopping_cart')
-						+e.icon._lens
-							+icon('lens')
+						+e('a').icon-item.shop(href='#')
+							+icon('shopping_cart').icon
+						+e('a').icon-item.lens(href='#')
+							+icon('lens').icon
 			+e.slider
 				+slider
