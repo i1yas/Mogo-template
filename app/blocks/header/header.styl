@@ -6,9 +6,13 @@
 	&__wrapper
 		padding-y 28px
 	&__top
+		margin-bottom 28px
 		display flex
 		justify-content space-between
 		font-family montserrat
+	&__logo
+		font-weight bold
+		font-size 30px
 	&__navigation
 		display inline-block
 	&__nav-item
@@ -20,6 +24,12 @@
 		text-transform uppercase
 		&:hover
 			color $yellow
+		&_selected
+			margin-x 27px
+			padding 11px 0
+			cursor default
+			color $yellow
+			border-bottom 3px solid $yellow
 	&__icons
 		display inline-block
 	&__icon-item
