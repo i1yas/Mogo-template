@@ -1,0 +1,75 @@
+.slider
+	text-align center
+	display flex
+	justify-content space-between
+	flex-direction column
+	height 100%
+	&__titles
+		&:after
+			content ''
+			display inline-block
+			size 60px 3px
+			background-color #fff
+	&__small-title
+		padding-y 30px
+		font-family kaushan
+		font-size 72px
+	&__big-title
+		padding-y 30px
+		font-family montserrat
+		font-size 150px
+		font-weight bold
+		text-transform uppercase
+		span
+			white-space nowrap
+	&__button
+		margin-y 50px
+		padding-x 30px
+		height 40px
+		font-family montserrat
+		font-size 14px
+		text-transform uppercase
+		color white
+		background none
+		border 3px solid white
+		transition border .1s, color .3s
+		&:hover
+			border 3px solid $yellow
+		&:active
+			color $red
+		&:focus
+			color $red
+			border 3px solid $red
+	&__navigation
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+	&__nav-item
+		font-family montserrat
+		text-align left
+		text-decoration none
+		color rgba(white, .7)
+		flex-basis 23%
+		flex-shrink 0
+		&:hover
+			color rgba(white, 1)
+		&_selected
+			color rgba(white, 1)
+	&__line
+		display inline-block
+		background-color rgba(white, .5)
+		size 100% 3px
+		&:after
+			display block
+			content ''
+			background-color $red
+			size 20% 100%
+	&__sign
+		font-size 18px
+		text-transform uppercase
+	&__number
+		margin-top 21px
+		margin-right 3px
+		display inline-block
+		font-size 24px
+		font-weight bold

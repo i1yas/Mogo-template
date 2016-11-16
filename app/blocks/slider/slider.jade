@@ -1,28 +1,35 @@
 mixin slider()
 	+b.slider
-		+e.titles
-			+e('h2').small-title
-				| Creative Template
-			+e('h1').big-title
-		+e('button').button
-			| Learn More
+		+e.item
+			+e.titles
+				+e('h2').small-title
+					| Creative Template
+				+e('h1').big-title
+					span Welcome
+					span to Mogo
+			+e('button').button
+				| Learn More
 		+e('nav').navigation
-			+e.nav-item
+			+e('a').nav-item(href='#')._selected
+				+e.line
 				+e('span').number
 					| 01
 				+e('span').sign
 					| Intro
-			+e.nav-item
+			+e('a').nav-item(href='#')
+				+e.line
 				+e('span').number
 					| 02
 				+e('span').sign
 					| Work
-			+e.nav-item
+			+e('a').nav-item(href='#')
+				+e.line
 				+e('span').number
 					| 03
 				+e('span').sign
 					| About
-			+e.nav-item
+			+e('a').nav-item(href='#')
+				+e.line
 				+e('span').number
 					| 04
 				+e('span').sign
