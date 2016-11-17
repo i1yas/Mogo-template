@@ -24,6 +24,9 @@
 		text-transform uppercase
 		&:hover
 			color $yellow
+		&:focus
+			color lighten($yellow, 70%)
+			box-shadow 0 16px 21px -18px white
 		&_selected
 			margin-x 27px
 			padding 11px 0
@@ -37,6 +40,10 @@
 		display inline-block
 		&_lens
 			padding-right 0
+		&:focus
+			box-shadow 0 16px 21px -18px white
+			& ^[0]__icon
+				fill lighten($yellow, 70%)
 	&__icon
 		transition fill .1s
 		size 16px
