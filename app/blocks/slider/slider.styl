@@ -1,9 +1,9 @@
 .slider
-	text-align center
 	display flex
-	justify-content space-between
 	flex-direction column
 	height 100%
+	text-align center
+	justify-content space-between
 	&__items
 		display flex
 		overflow-x auto
@@ -11,17 +11,17 @@
 		-ms-overflow-style none
 		overflow -moz-scrollbars-none
 		&::-webkit-scrollbar
-			width 0 !important
+			width 0 !important // @stylint ignore
 	&__item
 		user-select none
 		flex-shrink 0
 		flex-basis 100%
 	&__titles
 		&:after
-			content ''
 			display inline-block
-			size 60px 3px
+			content ''
 			background-color #fff
+			size 60px 3px
 	&__small-title
 		padding-y 30px
 		font-family kaushan
