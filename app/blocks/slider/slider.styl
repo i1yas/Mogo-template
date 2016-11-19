@@ -25,15 +25,23 @@
 	&__small-title
 		padding-y 30px
 		font-family kaushan
-		font-size 72px
+		font-size calc(3vw + 54px)
+		@media(max-width 1240px)
+			padding-y 20px
+		@media(max-width 980px)
+			font-size calc(1vw + 34px)
 	&__big-title
 		padding-y 30px
 		font-family montserrat
-		font-size 150px
+		font-size calc(6vw + 38px)
 		font-weight bold
 		text-transform uppercase
 		span
 			white-space nowrap
+		@media(max-width 1240px)
+			padding-y 20px
+		@media(max-width 980px)
+			font-size calc(3vw + 28px)
 	&__button
 		margin-y 50px
 		padding-x 30px
@@ -45,6 +53,9 @@
 		background none
 		border 3px solid white
 		transition border .1s, color .3s
+		@media(max-width 980px)
+			padding-x 20px
+			height 30px
 		&:hover
 			border 3px solid $yellow
 		&:active
@@ -61,7 +72,7 @@
 		text-align left
 		text-decoration none
 		color rgba(white, .7)
-		flex-basis 23%
+		flex-basis 24%
 		flex-shrink 0
 		&:hover
 			color rgba(white, 1)
@@ -80,11 +91,13 @@
 		height 100%
 		background-color $red
 	&__sign
-		font-size 18px
+		font-size calc(.2vw + 12px)
 		text-transform uppercase
 	&__number
 		margin-top 21px
 		margin-right 3px
 		display inline-block
-		font-size 24px
+		font-size calc(.62vw + 12px)
 		font-weight bold
+		@media(max-width 540px)
+			display none

@@ -1,18 +1,32 @@
 .header
-	height 1000px
+	max-height 1000px
+	min-height 650px
+	height calc(19vw + 650px)
 	color white
 	background-color $red
 	background-image url(../images/header/background.jpg)
 	&__wrapper
 		padding-y 28px
+		display flex
+		flex-direction column
+		justify-content space-between
+		height 100%
 	&__top
 		margin-bottom 28px
 		display flex
 		font-family montserrat
 		justify-content space-between
+		@media(max-width 980px)
+			flex-direction column
 	&__logo
 		font-size 30px
 		font-weight bold
+		@media(max-width 980px)
+			margin-bottom 30px
+			text-align center
+	&__menu
+		@media(max-width 980px)
+			text-align center
 	&__navigation
 		display inline-block
 	&__nav-item
@@ -22,6 +36,8 @@
 		color white
 		transition color .1s
 		text-transform uppercase
+		@media(max-width 980px)
+			padding 15px 12px
 		&:hover
 			color $yellow
 		&:focus
@@ -33,13 +49,20 @@
 			cursor default
 			color $yellow
 			border-bottom 3px solid $yellow
+			@media(max-width 980px)
+				margin-x 12px
+				padding 15px 0
 	&__icons
 		display inline-block
 	&__icon-item
 		padding 11px 27px
 		display inline-block
+		@media(max-width 980px)
+			padding 15px 12px
 		&_lens
 			padding-right 0
+			@media(max-width 980px)
+				padding-right 12px
 		&:focus
 			box-shadow 0 16px 21px -18px white
 			& ^[0]__icon
@@ -52,4 +75,4 @@
 			fill $yellow
 	&__slider
 		padding-top 100px
-		height 880px
+		flex-basis 88%
