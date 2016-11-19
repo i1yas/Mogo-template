@@ -6,10 +6,10 @@
 	justify-content space-between
 	&__items
 		display flex
+		overflow -moz-scrollbars-none
 		overflow-x auto
 		-webkit-overflow-scrolling touch
 		-ms-overflow-style none
-		overflow -moz-scrollbars-none
 		&::-webkit-scrollbar
 			width 0 !important // @stylint ignore
 	&__item
@@ -79,7 +79,8 @@
 		&:focus
 			color white
 			& ^[0]__number
-				font-size 30px
+				margin-top 16px
+				font-size calc(.67vw + 15px)
 		&_selected
 			color rgba(white, 1)
 	&__line
