@@ -1,0 +1,36 @@
+.fancy-image
+	position relative
+	display inline-block
+	&__overlay
+		position absolute
+		top 0
+		left 0
+		display flex
+		flex-direction column
+		text-align center
+		color white
+		justify-content space-around
+		opacity 0
+		size 100%
+		background-image linear-gradient(to bottom, rgba($red, .9) , rgba($yellow, .9))
+		transition opacity .2s
+		&:hover
+			opacity 1
+		&_not-gradient
+			background-image none
+	&__content
+		display none
+	&__overlay:hover &__content
+		display block
+	&__bg
+		user-select none
+		vertical-align top
+		position relative
+		z-index -10
+		transform translateX(0) translateY(0)
+		transition transform .1s, box-shadow .1s
+		box-shadow 0 0 0 $sea-green
+	&:hover &__bg
+			transform translateX(-10px) translateY(-10px)
+			box-shadow 10px 10px 0 $sea-green
+	// not finished

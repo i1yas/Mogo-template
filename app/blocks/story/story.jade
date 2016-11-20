@@ -1,0 +1,18 @@
+include ../heading/heading
+include ../fancy-image/fancy-image
+
+mixin story ()
+	+b.story
+		+wrapper
+			+heading('What We Do', 'Story About Us')
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis est veritatis quisquam a rerum doloribus hic vel nulla vero eius libero assumenda tempora blanditiis illum, explicabo dolor placeat enim deleniti!
+			+e.cards
+				+e.card
+					+fancy-image('assets/images/story/1.jpg')
+						| Super team
+				+e.card
+					+fancy-image('assets/images/story/2.jpg')
+						| Super team
+				+e.card
+					+fancy-image('assets/images/story/3.jpg')
+						| Super team

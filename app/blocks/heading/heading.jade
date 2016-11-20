@@ -1,0 +1,18 @@
+mixin heading (subTitle, title, isBlock)
+	if(isBlock)
+		+e.heading
+			+e.titles
+				+e('h2').sub-title=subTitle
+				+e('h1').title=title
+			if(block)
+				+e.desc
+					block
+	else
+		+b.heading
+			+e.titles
+				+e('h2').sub-title=subTitle
+				+e('h1').title=title
+			if(block)
+				+e.desc
+					block
+		

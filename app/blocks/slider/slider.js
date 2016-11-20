@@ -75,21 +75,19 @@ const slider = () => {
 	}
 
 	const stepScroll = () => {
-		console.log('step')
 		const step = Number(getComputedStyle(itemsParent).width.slice(0, -2));
 		const diff = [];
-		for(let i = 0; i < length; i++) {
-			diff.push(Math.abs(i*step - itemsParent.scrollLeft));
+		for (let i = 0; i < length; i++) {
+			diff.push(Math.abs(i * step - itemsParent.scrollLeft));
 		}
 		const index = diff.indexOf(Math.min(...diff));
 		autoPlay.play(index);
-	}
+	};
 
 	const resolveOnEndScroll = fn => {
 		let lastValue = itemsParent.scrollLeft;
 		const interval = setInterval(() => {
-			console.log(lastValue)
-			if(lastValue === itemsParent.scrollLeft) {
+			if (lastValue === itemsParent.scrollLeft) {
 				clearInterval(interval);
 				fn();
 			}
@@ -97,10 +95,10 @@ const slider = () => {
 		}, 0);
 	};
 
-	itemsParent.addEventListener('touchstart', event => {
+	itemsParent.addEventListener('touchstart', () => {
 		autoPlay.stop();
 	});
-	itemsParent.addEventListener('touchend', event => {
+	itemsParent.addEventListener('touchend', () => {
 		resolveOnEndScroll(stepScroll);
 	});
 };
