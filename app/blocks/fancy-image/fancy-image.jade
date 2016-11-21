@@ -1,12 +1,15 @@
-mixin fancy-image (url, notFly, notGradient)
+mixin fancy-image (url, context, notFly, notGradient)
 	- var flyMod = ''
 	- var gradinetMod = ''
+	- var contextClass = ''
 	- if(notFly)
 		- flyMod += '_not-fly'
 	- if(notGradient)
-		- gradinetMod = '_not-gradinet'
+		- gradinetMod += '_not-gradinet'
+	- if(context)
+		- contextClass = context + '__'
 	+b.fancy-image&attributes(attributes)
 		+e.overlay(class=gradientMod)
-			+e.content
+			+e.content(class=contextClass)
 				block
 		+e('img').bg(class=flyMod src=url alt='' draggable='false')
