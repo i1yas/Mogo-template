@@ -5,6 +5,12 @@
 		padding-y 60px
 		display flex
 		justify-content space-between
+		flex-wrap wrap
+		@media(max-width 1200px)
+			justify-content space-around
+	&__card
+		@media(max-width 1200px)
+			padding-y 10px
 	&__icon
 		size 32px
 		fill white
