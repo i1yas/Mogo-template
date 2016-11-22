@@ -1,16 +1,14 @@
 include ../icon/icon
 
-mixin work ()
+mixin work (services)
 	+b.work
 		+wrapper
 			+heading('We work with', 'Amazing services')
 			+e.services
-				- for(var i = 0; i < 6; i++)
+				- for(var i = 0; i < services.length; i++)
 					+e.servise
 						+e.icon-block
-							+icon('alarm').icon
+							+icon(services[i].icon).icon
 						+e.text-block
-							+e.title
-								| Photography
-							+e.desc
-								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quo.
+							+e.title=services[i].title
+							+e.desc=services[i].desc

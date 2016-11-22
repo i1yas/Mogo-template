@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Photography",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, consequatur.",
+		"icon": "alarm"
+	},
+	{
+		"title": "Web design",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+		"icon": "line_graph"
+	},
+	{
+		"title": "Creativity",
+		"desc": "Dolor sit amet, consectetur adipisicing elit. Ea, consequatur.",
+		"icon": "computer"
+	},
+	{
+		"title": "SEO",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cum error quasi. Perferendis nam, iusto.",
+		"icon": "book"
+	},
+	{
+		"title": "CSS/HTML",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, reprehenderit nemo!",
+		"icon": "home"
+	},
+	{
+		"title": "Digital",
+		"desc": "Sit amet, consectetur adipisicing elit. Nobis, reprehenderit nemo!",
+		"icon": "rect"
+	}
+]
