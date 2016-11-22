@@ -1,0 +1,18 @@
+mixin service (services)
+	+b.service
+		+wrapper
+			+heading('Service', 'What we do')
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ipsam similique est voluptatum dignissimos nulla neque illum iste repudiandae non.
+			+e.box
+				+e.pictures
+					+e('img').picture(src='/assets/images/services/1.jpg')
+					+e('img').picture(src='/assets/images/services/2.jpg')
+					+e('img').picture(src='/assets/images/services/3.jpg')
+				+e('nav').menu
+					- for(var i = 0; i < 3; i++)
+						+e.menu-item
+							+e.menu-title
+								+icon(services[i].icon).menu-icon
+								+e('span').menu-sign=services[i].title
+								+icon('arrow_down').arrow-icon
+							+e.menu-desc=services[i].desc

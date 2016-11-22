@@ -1,0 +1,17 @@
+[
+	{
+		"title": "Photography",
+		"icon": "picture",
+		"desc": "Dorem ipsum dolor sit amet, consectetur adipisicing elit. Illum earum fugiat consequatur rerum obcaecati nemo. Molestiae quidem magnam praesentium officiis illo, eos rem quis veniam minima alias voluptas consequatur iusto nisi, similique animi nobis veritatis vel tempore facere necessitatibus assumenda perferendis iure quia! Cumque, blanditiis deleniti consectetur culpa cum eligendi veniam odio tenetur. Eligendi voluptatibus at, sed distinctio illo quas eos minus laboriosam accusantium, voluptatum ad odit, dolor reiciendis obcaecati. Delectus aperiam error in, quisquam ad similique quam facilis ratione laboriosam totam, tenetur hic provident perferendis, officia consectetur ab reiciendis. Doloremque repellendus molestias porro aperiam, incidunt necessitatibus quia perferendis veniam tempore quibusdam maiores, quas error eaque odio perspiciatis ex dolorem sequi unde, voluptate vel at dolor omnis nobis! Veritatis aut nesciunt id nihil illum earum sed, aspernatur non possimus libero, molestias deserunt distinctio at esse dolorem provident excepturi officiis adipisci recusandae dolor. Molestias cum repudiandae dolore modi consequatur eligendi aut cupiditate, porro sunt magnam inventore eveniet. Praesentium odit nemo eius. Aperiam labore ullam alias nostrum sed minus nihil impedit iusto earum quas officia adipisci saepe nulla aspernatur, reprehenderit corporis cupiditate atque in pariatur mollitia nesciunt. Inventore, sapiente cumque tenetur totam sunt quibusdam maxime quas, doloremque cupiditate assumenda, nemo quos debitis."
+	},
+	{
+		"title": "Creativity",
+		"icon": "equalizer",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quaerat expedita minima itaque, laborum amet, nam quisquam inventore dolore laboriosam."
+	},
+	{
+		"title": "Web design",
+		"icon": "goal",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit incidunt veritatis sapiente nobis pariatur iste tempora, minima optio?"
+	}
+]
