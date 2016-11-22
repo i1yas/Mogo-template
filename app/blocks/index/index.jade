@@ -1,9 +1,11 @@
 include ../story/story
 include ../facts/facts
 include ../work/work
+include ../feature/feature
 
 mixin index ()
 	+b.index
 		+story
 		+facts
 		+work(getData('work'))
+		+feature

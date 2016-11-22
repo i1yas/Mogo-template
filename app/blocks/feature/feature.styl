@@ -1,0 +1,41 @@
+.feature
+	background-image url(../images/feature/background.jpg)
+	background-position 50% 50%
+	background-size cover
+	&__wrapper
+		margin-bottom 65px
+		padding-top 65px
+	&__devices
+		position relative
+		height 582px
+	&__ipad
+		position absolute
+		top 50%
+		left 50%
+		margin-top (-582px / 2)
+		margin-left (-477px / 2)
+		background-image url(../images/feature/ipad.png)
+		size 477px 582px
+		@media(max-width 520px)
+			opacity .4
+	&__ipad-pic
+		position absolute
+		bottom 0
+		left 26px
+	&__iphone
+		position absolute
+		size 274px 476px
+		top 34%
+		left 60.2%
+		background-image url(../images/feature/iphone.png)
+		@media(max-width 630px)
+			left 40%
+		@media(max-width 520px)
+			top 50%
+			left 50%
+			margin-top (-476px / 2)
+			margin-left (-274px / 2)
+	&__iphone-pic
+		position absolute
+		top 64px
+		left 45px
