@@ -11,6 +11,7 @@ const service = () => {
 
 	for (let i = 1; i < pictures.length; i++) {
 		pictures[i].style.opacity = 0;
+		descriptions[i].style.transform = 'translateY(-50%) scaleY(0)';
 	}
 
 	descriptions[0].classList.add(modifiers.descOpen);
@@ -18,6 +19,7 @@ const service = () => {
 
 	const switcher = {
 		currentIndex: 0,
+		animationDelay: 200,
 		change(newIndex) {
 			if (this.currentIndex === newIndex) {
 				return;
@@ -27,13 +29,22 @@ const service = () => {
 			pictures[this.currentIndex].style.opacity = 0;
 			pictures[this.currentIndex].style.zIndex = '';
 
-			descriptions[this.currentIndex].classList.remove(modifiers.descOpen);
-			descriptions[newIndex].classList.add(modifiers.descOpen);
+			descriptions[this.currentIndex].style.zIndex = -10;
+			descriptions[this.currentIndex].style.transform = 'translateY(-50%) scaleY(0)';
+			setTimeout(() => {
+				descriptions[this.currentIndex].classList.remove(modifiers.descOpen);
+				descriptions[this.currentIndex].style.zIndex = '';
 
-			arrowIcons[this.currentIndex].classList.remove(modifiers.arrowUp);
-			arrowIcons[newIndex].classList.add(modifiers.arrowUp);
+				descriptions[newIndex].classList.add(modifiers.descOpen);
+				descriptions[newIndex].style.transform = 'translateY(0) scaleY(1)';
 
-			this.currentIndex = newIndex;
+				setTimeout(() => {
+					arrowIcons[this.currentIndex].classList.remove(modifiers.arrowUp);
+					arrowIcons[newIndex].classList.add(modifiers.arrowUp);
+
+					this.currentIndex = newIndex;
+				}, (this.animationDelay + 10));
+			}, (this.animationDelay + 10));
 		}
 	};
 
