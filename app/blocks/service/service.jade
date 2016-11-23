@@ -9,7 +9,7 @@ mixin service (services)
 					+e('img').picture(src='/assets/images/services/2.jpg')
 					+e('img').picture(src='/assets/images/services/3.jpg')
 				+e('nav').menu
-					- for(var i = 0; i < 3; i++)
+					- for(var i = 0; i < services.length; i++)
 						+e.menu-item
 							+e.menu-title
 								+icon(services[i].icon).menu-icon

@@ -13,6 +13,8 @@
 		flex-basis 600px
 	&__picture
 		position absolute
+		opacity 1
+		transition opacity .1s linear
 	&__menu-item
 		margin-bottom 10px
 	&__menu-title
@@ -38,11 +40,13 @@
 		right 20px
 		fill #ccc
 		size 22px
+		&_up
+			transform rotateX(180deg)
 	&__menu-desc
 		padding 15px
 		display none
-		max-height 180px
 		overflow-y auto
+		max-height 170px
 		border-left 1px solid #e5e5e5
 		border-right 1px solid #e5e5e5
 		border-bottom 1px solid #e5e5e5
