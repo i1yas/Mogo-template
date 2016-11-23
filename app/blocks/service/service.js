@@ -1,4 +1,4 @@
-const service = () => {
+const service = $ => {
 	const pictures = document.querySelectorAll('.service__picture');
 	const menuItems = document.querySelectorAll('.service__menu-item');
 	const descriptions = document.querySelectorAll('.service__menu-desc');
@@ -16,6 +16,15 @@ const service = () => {
 
 	descriptions[0].classList.add(modifiers.descOpen);
 	arrowIcons[0].classList.add(modifiers.arrowUp);
+	$(window).on('load', () => {
+		$('.service__menu-desc').mCustomScrollbar({
+			theme: 'minimal-dark',
+			mouseWheel: {
+				preventDefault: true,
+				enable: true
+			}
+		});
+	});
 
 	const switcher = {
 		currentIndex: 0,
