@@ -18,7 +18,7 @@ const service = $ => {
 	arrowIcons[0].classList.add(modifiers.arrowUp);
 	$(window).on('load', () => {
 		$('.service__menu-desc').mCustomScrollbar({
-			theme: 'minimal-dark',
+			theme: 'dark-3',
 			mouseWheel: {
 				preventDefault: true,
 				enable: true
