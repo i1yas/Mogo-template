@@ -1,12 +1,15 @@
 import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
-import jqueryMouseWheel from 'jquery-mousewheel';
-import customSlider from 'malihu-custom-scrollbar-plugin';
-const slider = require('../blocks/slider/slider');
-const service = require('../blocks/service/service');
+import 'jquery-mousewheel';
+import 'malihu-custom-scrollbar-plugin';
+import slider from '../blocks/slider/slider';
+import service from '../blocks/service/service';
+import 'owl.carousel';
+import quotesSlider from '../blocks/quotes/quotes';
 
 $(() => {
 	svg4everybody();
 	slider();
 	service($);
+	quotesSlider($);
 });

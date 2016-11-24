@@ -1,0 +1,57 @@
+.quotes
+	background #f8f8f8
+	&__wrapper
+		padding-y 70px
+	&__slider
+		display flex
+		align-items center
+	&__icon-box
+		margin-x 50px
+		padding 42px 40px
+		width 144px
+		border 3px solid $sea-green
+	&__items
+		overflow hidden
+		align-self flex-start
+	&__quote
+		margin-right 50px
+		user-select none
+	&__speech
+		font-size 24px
+		font-style italic
+		line-height 1.5
+		&:before
+			display inline
+			content '\“'
+		&:after
+			display inline
+			content '\”'
+	&__author
+		margin-top 20px
+		font-family kaushan
+		font-size 24px
+		color $dark-grey
+		&:before
+			margin-right 10px
+			margin-bottom 5px
+			display inline-block
+			content ''
+			background $red
+			size 60px 3px
+	&__icon
+		size 61px 63px
+		fill $sea-green
+	&__nav-btn
+		padding-y 10px
+		background none
+		border none
+		border-radius 3px
+		&:focus
+			background-color rgba(black, .03)
+	&__arrow
+		margin-x 23px
+		cursor pointer
+		fill #ccc
+		size 22px
+		&:hover
+			fill $sea-green

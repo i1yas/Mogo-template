@@ -1,0 +1,16 @@
+mixin quotes (quotes)
+	+b.quotes
+		+wrapper
+			+e.slider
+				+e('button').nav-btn._left
+					+icon('arrow_left').arrow._left
+				+e.icon-box
+					+icon('quote').icon
+				+e.items
+					+e.slider-container
+						- for(var i = 0; i < quotes.length; i++)
+							+e.quote
+								+e.speech=quotes[i].text
+								+e.author=quotes[i].author
+				+e('button').nav-btn._right
+					+icon('arrow_right').arrow._right
