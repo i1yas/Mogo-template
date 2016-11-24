@@ -7,11 +7,13 @@
 	&__items
 		display flex
 		overflow-x auto
+		// @stylint off
 		overflow -moz-scrollbars-none
 		-webkit-overflow-scrolling touch
 		-ms-overflow-style none
 		&::-webkit-scrollbar
-			width 0 !important // @stylint ignore
+			width 0 !important
+		// @stylint on
 	&__item
 		user-select none
 		flex-shrink 0
