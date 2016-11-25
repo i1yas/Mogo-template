@@ -1,0 +1,9 @@
+mixin brands()
+	+b.brands
+		+wrapper
+			+e.row
+				- var path
+				- for(var i = 0; i < 6; i++)
+					- path = 'assets/images/logos/' + (i + 1) + '.png'
+					+e.brand
+						+e('img').image(src=path alt='')
