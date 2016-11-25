@@ -1,6 +1,6 @@
 include ../fancy-image/fancy-image
 
-mixin works()
+mixin works(works)
 	+b.works
 		+wrapper
 			+heading('What we do', 'Some our work')
@@ -18,27 +18,19 @@ mixin works()
 							+e('a').preview-content(href='#')
 								+icon('picture').icon
 								+e.preview-sign
-									+e.preview-title
-										| Creatively designed
-									+e.preview-desc
-										| Lorem ipsum dolor sit amet.
-
+									+e.preview-title=works.small[i].title
+									+e.preview-desc=works.small[i].desc
 					+e.item
 						+fancy-image(path2, 'works', 'notFly')
 							+e('a').preview-content(href='#')
 								+icon('picture').icon
 								+e.preview-sign
-									+e.preview-title
-										| Creatively designed
-									+e.preview-desc
-										| Lorem ipsum dolor sit amet.
-
+									+e.preview-title=works.small[i + 1].title
+									+e.preview-desc=works.small[i + 1].desc
 			+e.item._big
 				+fancy-image('assets/images/works/1_big.jpg', 'works', 'notFly')
 					+e('a').preview-content(href='#')
 						+icon('picture').icon
 						+e.preview-sign
-							+e.preview-title
-								| Creatively designed
-							+e.preview-desc
-								| Lorem ipsum dolor sit amet.
+							+e.preview-title=works.big[0].title
+							+e.preview-desc=works.big[0].desc

@@ -1,0 +1,34 @@
+{
+	"small": [
+		{
+			"title": "Creatively designed",
+			"desc": "Lorem ipsum dolor sit amet, consectetur."
+		},
+		{
+			"title": "Industrial design",
+			"desc": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"title": "Graphic products",
+			"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+		},
+		{
+			"title": "Branding",
+			"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+		},
+		{
+			"title": "UI/UX",
+			"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident."
+		},
+		{
+			"title": "Stones",
+			"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis!"
+		}
+	],
+	"big": [
+		{
+			"title": "Medusa",
+			"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis!"
+		}
+	]
+}
