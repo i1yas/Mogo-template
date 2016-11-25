@@ -2,7 +2,21 @@
 	background #f8f8f8
 	&__wrapper
 		padding-y 70px
+		@media(max-width 540px)
+			padding-y 30px
 	&__row
 		display flex
 		justify-content space-between
 		align-items center
+		flex-wrap wrap
+		@media(max-width 780px)
+			justify-content space-around
+	&__image
+		width 100%
+		min-width 40px
+		max-width 90px
+		height auto
+		@media(max-width 780px)
+			margin-x 30px
+		@media(max-width 540px)
+			margin-x 0

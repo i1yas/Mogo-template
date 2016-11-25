@@ -1,0 +1,44 @@
+include ../fancy-image/fancy-image
+
+mixin works()
+	+b.works
+		+wrapper
+			+heading('What we do', 'Some our work')
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas cum voluptatem ea fuga suscipit laboriosam eligendi quasi nobis, quia quaerat magnam quod quibusdam a nesciunt itaque dolor rem aliquid praesentium minus numquam! Qui, odit, iure?
+		+e.items
+			- for(var i = 0; i < 6; i += 2)
+				- var path1 = 'assets/images/works/' + (i + 1) + '.jpg'
+				- var path2 = 'assets/images/works/' + (i + 2) + '.jpg'
+				- var modifier = ''
+				- if(i > 3)
+					- modifer = '_swap'
+				+e.group(class=modifer)
+					+e.item
+						+fancy-image(path1, 'works', 'notFly')
+							+e('a').preview-content(href='#')
+								+icon('picture').icon
+								+e.preview-sign
+									+e.preview-title
+										| Creatively designed
+									+e.preview-desc
+										| Lorem ipsum dolor sit amet.
+
+					+e.item
+						+fancy-image(path2, 'works', 'notFly')
+							+e('a').preview-content(href='#')
+								+icon('picture').icon
+								+e.preview-sign
+									+e.preview-title
+										| Creatively designed
+									+e.preview-desc
+										| Lorem ipsum dolor sit amet.
+
+			+e.item._big
+				+fancy-image('assets/images/works/1_big.jpg', 'works', 'notFly')
+					+e('a').preview-content(href='#')
+						+icon('picture').icon
+						+e.preview-sign
+							+e.preview-title
+								| Creatively designed
+							+e.preview-desc
+								| Lorem ipsum dolor sit amet.

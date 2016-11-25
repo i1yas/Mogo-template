@@ -8,8 +8,8 @@ mixin fancy-image (url, context, notFly, notGradient)
 		- gradinetMod += '_not-gradinet'
 	- if(context)
 		- contextClass = context + '__'
-	+b.fancy-image&attributes(attributes)
+	+b.fancy-image(class=flyMod)&attributes(attributes)
 		+e.overlay(class=gradientMod)
 			+e.content(class=contextClass)
 				block
-		+e('img').bg(class=flyMod src=url alt='' draggable='false')
+		+e('img').bg(src=url alt='' draggable='false')
