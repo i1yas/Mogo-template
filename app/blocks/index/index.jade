@@ -4,6 +4,7 @@ include ../work/work
 include ../feature/feature
 include ../service/service
 include ../quotes/quotes
+include ../team/team
 
 mixin index ()
 	+b.index
@@ -13,3 +14,4 @@ mixin index ()
 		+feature
 		+service(getData('service'))
 		+quotes(getData('quotes'))
+		+team

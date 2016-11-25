@@ -1,0 +1,22 @@
+.share-box
+	display table-row
+	border-collapse collapse
+	&__button
+		padding 13px 15px
+		display table-cell
+		background-color $yellow
+		border none
+		border-left 1px solid rgba($red, .5)
+		transition background-color .1s
+		&:hover
+			background-color $red
+			& ^[0]__icon
+				fill white
+		@media(max-width 740px)
+			padding 11px 12px
+	&__icon
+		vertical-align middle
+		fill $red
+		size 26px
+		@media(max-width 540px)
+			size 23px

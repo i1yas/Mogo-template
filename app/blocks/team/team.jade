@@ -1,0 +1,32 @@
+include ../share-box/share-box
+
+mixin team()
+	+b.team
+		+wrapper
+			+heading('Who we are', 'Meet out team')
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi modi, aliquid labore! Enim quia consectetur officiis ad, tenetur officia perspiciatis, illo, quibusdam harum voluptate autem tempore consequuntur sint consequatur veritatis fuga alias.
+			+e.members
+				+e.member
+					+fancy-image('assets/images/team/1.jpg')
+						+share-box
+					+e.sign
+						+e.name
+							| Matthew Dew
+						+e.position
+							| Graphic designer
+				+e.member
+					+fancy-image('assets/images/team/2.jpg')
+						+share-box
+					+e.sign
+						+e.name
+							| Christopher Campbell
+						+e.position
+							| Branding/UX designer
+				+e.member
+					+fancy-image('assets/images/team/3.jpg')
+						+share-box
+					+e.sign
+						+e.name
+							| Michael Fertig
+						+e.position
+							| Developer
