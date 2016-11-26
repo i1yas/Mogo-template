@@ -1,0 +1,41 @@
+.quotes-slider
+	&__container
+		display flex
+	&__image
+		margin-right 30px
+		border-radius 50%
+		height 100%
+		@media(max-width 800px)
+			display none
+	&__quote
+		margin-right 50px
+		user-select none
+		@media(max-width 600px)
+			margin-top 0
+			margin-right 0
+	&__speech
+		margin-top 30px
+		font-size 24px
+		font-style italic
+		line-height 1.5
+		&:before
+			display inline
+			content '\“'
+		&:after
+			display inline
+			content '\”'
+
+	&__author
+		margin-top 20px
+		font-family kaushan
+		font-size 24px
+		color $dark-grey
+		&:before
+			margin-right 10px
+			margin-bottom 5px
+			display inline-block
+			content ''
+			background $red
+			size 60px 3px
+			@media(max-width 980px)
+				size 20px 3px

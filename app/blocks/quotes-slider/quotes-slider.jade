@@ -1,0 +1,14 @@
+mixin quotes-slider(quotes, imagePath, extension)
+	+b.quotes-slider
+			- for(var i = 0; i < quotes.length; i++)
+				+e.quote
+					- if(imagePath)
+						- var path = imagePath + (i + 1) + extension
+						+e.container
+							+e('img').image(src=path alt='')
+							+e.text
+								+e.speech=quotes[i].text
+								+e.author=quotes[i].author
+					- else
+						+e.speech=quotes[i].text
+						+e.author=quotes[i].author

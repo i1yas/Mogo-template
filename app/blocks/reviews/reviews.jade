@@ -1,14 +1,12 @@
 include ../quotes-slider/quotes-slider
 
-mixin quotes (quotes)
-	+b.quotes
+mixin reviews(reviews)
+	+b.reviews
 		+wrapper
 			+e.slider
 				+e('button').nav-btn._left.quotes-slider__prev
 					+icon('arrow_left').arrow._left
-				+e.icon-box
-					+icon('quote').icon
 				+e.items
-					+quotes-slider(quotes)
+					+quotes-slider(reviews, 'assets/images/reviews/', '.jpg')
 				+e('button').nav-btn._right.quotes-slider__next
 					+icon('arrow_right').arrow._right
