@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Matthew Dix",
+		"position": "Graphic Designer",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates recusandae reprehenderit quibusdam."
+	},
+	{
+		"name": "Nick Karvounis",
+		"position": "Graphic Designer",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eos doloribus enim dolorum quisquam."
+	},
+	{
+		"name": "Jaelyn Castillo",
+		"position": "Graphic Designer",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia."
+	},
+	{
+		"name": "Mike Petrucci",
+		"position": "Graphic Designer",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, facilis, voluptatem!"
+	}
+]

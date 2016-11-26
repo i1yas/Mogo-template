@@ -8,6 +8,7 @@ include ../team/team
 include ../brands/brands
 include ../works/works
 include ../reviews/reviews
+include ../reviews2/reviews2
 
 mixin index ()
 	+b.index
@@ -21,3 +22,4 @@ mixin index ()
 		+brands
 		+works(getData('works'))
 		+reviews(getData('reviews'))
+		+reviews2(getData('reviews2'))

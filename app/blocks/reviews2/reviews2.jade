@@ -1,0 +1,14 @@
+mixin reviews2(reviews)
+	+b.reviews2
+		+wrapper
+			+heading('Happy Clients', 'What People Say')
+			+e.items
+				- var path = ''
+				- for(var i = 0; i < reviews.length; i++)
+					- path = 'assets/images/reviews2/' + (i + 1) + '.jpg'
+					+e.item
+						+e('img').photo(src=path alt='')
+						+e.text
+							+e.name=reviews[i].name
+							+e.position=reviews[i].position
+							+e.speech=reviews[i].text

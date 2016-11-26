@@ -7,7 +7,7 @@ mixin quotes-slider(quotes, imagePath, extension)
 						+e.container
 							+e('img').image(src=path alt='')
 							+e.text
-								+e.speech=quotes[i].text
+								+e.speech._offset=quotes[i].text
 								+e.author=quotes[i].author
 					- else
 						+e.speech=quotes[i].text
