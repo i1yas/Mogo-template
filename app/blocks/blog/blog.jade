@@ -14,7 +14,7 @@ mixin blog(posts)
 							+e.date
 								+e('h2').day=posts[i].date[0]
 								+e('span').month=posts[i].date[1]
-						+e('a').sign(href='#')
+						+e('a').sign(href=posts[i].link)
 							+e.title=posts[i].title
 							+e.desc=posts[i].text
 						+e.indicators
