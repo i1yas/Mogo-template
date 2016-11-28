@@ -1,0 +1,27 @@
+mixin blog(posts)
+	+b.blog
+		+wrapper
+			+heading('Our stories', 'Latest blog')
+			+e.posts
+				- var i = posts.length - 1
+				- var last3 = posts.length - 3
+				- var path = ''
+				- for(i; i >= last3; i--)
+					- path = 'assets/images/blog/' + (i + 1) + '.jpg'
+					+e.post
+						+e.preview
+							+e('img').image(src=path alt='')
+							+e.date
+								+e('h2').day=posts[i].date[0]
+								+e('span').month=posts[i].date[1]
+						+e('a').sign(href='#')
+							+e.title=posts[i].title
+							+e.desc=posts[i].text
+						+e.indicators
+							+e.views
+								+icon('view').icon._view
+								+e('span').number=posts[i].views
+							+e.comments
+								+icon('bubble').icon._comment
+								+e('span').number=posts[i].comments
+					
