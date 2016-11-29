@@ -17,7 +17,7 @@ const quotesSlider = ($, isWidthImage) => {
 	});
 
 	const changeImage = direction => {
-		const length = images.children().length
+		const length = images.children().length;
 		if (direction === 'next') {
 			images.css('transform', `translateX(${100 / length}%)`);
 		}else if (direction === 'prev') {

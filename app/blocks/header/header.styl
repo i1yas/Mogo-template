@@ -1,16 +1,19 @@
 .header
-	height calc(19vw + 650px)
-	min-height 650px
-	max-height 1000px
+	height 1000px
 	color white
 	background-color $red
 	background-image url(../images/header/background.jpg)
+	background-position 50% 50%
+	@media(max-width 650px)
+		height 800px
+	@media(max-width 540px)
+		height 650px
 	&__wrapper
 		padding-y 28px
 		display flex
 		flex-direction column
-		justify-content space-between
 		height 100%
+		justify-content space-between
 	&__top
 		margin-bottom 28px
 		display flex
