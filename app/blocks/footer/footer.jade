@@ -1,3 +1,53 @@
+include ../icon/icon
+include ../text-input/text-input
+include ../blog-mini/blog-mini
+include ../insta-mini/insta-mini
+
 mixin footer ()
 	+b.footer
-		| footer block
+		+wrapper
+			+e.content
+				+e.left-side
+					+e.about
+						+e.logo-title
+							| Mogo
+						+e.desc
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sint, quibusdam laudantium molestiae quos animi cumque nulla, dolorem nostrum et accusantium illum neque numquam ducimus ratione provident, asperiores.
+					+e.social
+						+e.followers
+							+e('span').numbers
+								| 15k 
+							| followers
+						+e.icons
+							+e('span').icon-sign
+								| Follow Us:
+							+e('button').social-btn(href='#')
+								+icon('facebook').icon
+							+e('button').social-btn(href='#')
+								+icon('twitter').icon
+							+e('button').social-btn(href='#')
+								+icon('instagram').icon
+							+e('button').social-btn(href='#')
+								+icon('pinterest').icon
+							+e('button').social-btn(href='#')
+								+icon('google').icon
+							+e('button').social-btn(href='#')
+								+icon('youtube').icon
+							+e('button').social-btn(href='#')
+								+icon('dribbble').icon
+							+e('button').social-btn(href='#')
+								+icon('tumblr').icon
+					+e.search
+						+text-input('Your mail...', 'Subscribe')
+				+e.blog
+					+e.title
+						| Blogs
+					+blog-mini(getData('blog'))
+				+e.instagram
+					+e.title
+						| Instagram
+					+insta-mini
+			+e('footer').bottom
+				| © 2016 Mogo free PSD template by
+				+e('a').link(href='#')
+					| Laaqiq

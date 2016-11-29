@@ -2,6 +2,9 @@
 	&__wrapper
 		padding-top 65px
 		padding-bottom 100px
+		@media(max-width 540px)
+			padding-top 15px
+			padding-bottom 30px
 	&__posts
 		display flex
 		justify-content space-between
@@ -10,6 +13,8 @@
 			align-items center
 	&__post
 		max-width 380px
+		@media(max-width 700px)
+			margin-bottom 20px
 	&__preview
 		position relative
 	&__date
@@ -32,6 +37,10 @@
 		display block
 		text-decoration none
 		color inherit
+		@media(max-width 1200px)
+			margin-x 10px
+		@media(max-width 700px)
+			margin-x 0
 		&:hover ^[0]__title
 			color lighten($dark-grey, 50%)
 	&__title
@@ -49,6 +58,10 @@
 	&__indicators
 		padding-y 12px
 		border-top 1px solid #e5e5e5
+		@media(max-width 1200px)
+			margin-x 10px
+		@media(max-width 700px)
+			margin-x 0
 	&__views, &__comments
 		margin-right 15px
 		display inline-block

@@ -1,0 +1,30 @@
+.text-input
+	display table
+	&__field
+		display table-cell
+		background-color white
+		border 1px solid #e7e7e7
+		border-right 0
+		size 100%
+	&__input
+		padding-x 10px
+		font-style italic
+		color #ccc
+		background none
+		border none
+		size 100%
+		&:focus
+			color $dark-grey
+	&__button
+		padding 10px 35px
+		display table-cell
+		font-family montserrat
+		font-size 14px
+		text-transform uppercase
+		color white
+		background-color $sea-green
+		border none
+		opacity 1
+		transition opacity .1s
+		&:hover
+			opacity .8

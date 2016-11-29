@@ -1,0 +1,5 @@
+mixin text-input(placeholder, buttonText)
+	+b.text-input
+		+e.field
+			+e('input').input(type='text' placeholder=placeholder)&attributes(attributes)
+		+e('button').button=buttonText

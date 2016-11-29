@@ -1,0 +1,33 @@
+.blog-mini
+	&__post
+		margin-bottom 30px
+		clearfix()
+	&__image
+		float left
+		width 32%
+		@media(max-width 540px)
+			float none
+			width 100%
+	&__text
+		padding-top 15px
+		padding-left 38%
+		@media(max-width 540px)
+			padding-left 0
+	&__title
+		padding-bottom 5px
+		display block
+		font-family montserrat
+		font-size 12px
+		line-height 1.5
+		text-decoration none
+		text-transform uppercase
+		color $dark-grey
+		&:hover
+			color $red
+	&__date
+		font-size 13px
+		font-style italic
+	&__day
+		&:after
+			display inline
+			content ','

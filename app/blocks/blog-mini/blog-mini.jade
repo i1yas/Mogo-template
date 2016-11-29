@@ -1,0 +1,16 @@
+mixin blog-mini(posts)
+	+b.blog-mini
+		+e.posts
+			- var i = posts.length - 1
+			- var last3 = posts.length - 3
+			- var path = ''
+			- for(i; i >= last3; i--)
+				- path = 'assets/images/blog/' + (i + 1) + '.jpg'
+				+e.post
+					+e('img').image(src=path alt='')
+					+e.text
+						+e('a').title(href='#')=posts[i].text.slice(0,50)
+						+e.date
+							+e('span').month=posts[i].date[1]
+							+e('span').day=posts[i].date[0]
+							+e('span').year=posts[i].date[2]

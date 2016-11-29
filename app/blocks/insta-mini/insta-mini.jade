@@ -1,0 +1,9 @@
+mixin insta-mini()
+	+b.insta-mini
+		+e.photos
+			- var path = ''
+			- for(var i = 0; i < 9; i++)
+				- path = 'assets/images/instagram/' + (i + 1) + '.jpg'
+				+e('img').photo(src=path alt='')
+		+e('a').sign(href='#')
+			| View more photos
