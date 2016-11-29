@@ -1,5 +1,6 @@
-mixin text-input(placeholder, buttonText)
+mixin text-input(placeholder, buttonText, isBgColored)
+	- var bgColored = isBgColored ? '_bgColored' : ''
 	+b.text-input
-		+e.field
-			+e('input').input(type='text' placeholder=placeholder)&attributes(attributes)
+		+e.field(class=bgColored)
+			+e('input').input(class=bgColored type='text' placeholder=placeholder)&attributes(attributes)
 		+e('button').button=buttonText

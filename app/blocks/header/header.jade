@@ -1,6 +1,7 @@
 include ../icon/icon
 include ../wrapper/wrapper
 include ../slider/slider
+include ../text-input/text-input
 
 mixin header ()
 	+b.header
@@ -25,5 +26,7 @@ mixin header ()
 							+icon('shopping_cart').icon
 						+e('a').icon-item._lens(href='#')
 							+icon('lens').icon
+					+e.search
+						+text-input('', 'Search', 'bg-color')
 			+e.slider
 				+slider

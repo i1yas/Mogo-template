@@ -9,6 +9,7 @@
 	@media(max-width 540px)
 		height 650px
 	&__wrapper
+		position relative
 		padding-y 28px
 		display flex
 		flex-direction column
@@ -76,6 +77,18 @@
 		fill white
 		&:hover
 			fill $yellow
+	&__search
+		position absolute
+		top 60px
+		right 0
+		visibility hidden
+		width 400px
+		opacity 0
+		transition top .3s, opacity .1s
+		&_enabled
+			top 80px
+			visibility visible
+			opacity 1 
 	&__slider
 		padding-top 100px
 		flex-basis 88%

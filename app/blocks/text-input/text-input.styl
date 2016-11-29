@@ -6,6 +6,9 @@
 		border 1px solid #e7e7e7
 		border-right 0
 		size 100%
+		&_bgColored
+			border none
+			background-color rgba(white, .2)
 	&__input
 		padding-x 10px
 		font-style italic
@@ -15,6 +18,10 @@
 		size 100%
 		&:focus
 			color $dark-grey
+		&_bgColored
+			color rgba(white, .8)
+			&:focus
+				color white
 	&__button
 		padding 10px 35px
 		display table-cell
