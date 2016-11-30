@@ -4,22 +4,22 @@ include ../slider/slider
 include ../text-input/text-input
 
 mixin header ()
-	+b.header
+	+b.header(id='about')
 		+wrapper
 			+e.top
 				+e.logo
 					| MoGo
 				+e.menu
 					+e('nav').navigation
-						+e('a').nav-item(href='#')._selected
+						+e('a').nav-item(href='#about')._selected
 							| About
-						+e('a').nav-item(href='#')
+						+e('a').nav-item(href='#service')
 							| Service
-						+e('a').nav-item(href='#')
+						+e('a').nav-item(href='#blog')
 							| Blog
-						+e('a').nav-item(href='#')
+						+e('a').nav-item(href='#work')
 							| Work
-						+e('a').nav-item(href='#')
+						+e('a').nav-item(href='#contact')
 							| Contact
 					+e.icons
 						+e('a').icon-item._shop(href='#')
